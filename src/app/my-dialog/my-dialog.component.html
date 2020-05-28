@@ -1,0 +1,33 @@
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-storage.js"></script>
+
+<h2 mat-dialog-title>Student's Information</h2>
+
+<div mat-dialog-content>
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input id="name" matInput [(ngModel)]="name">
+    </mat-form-field>
+</div>
+<div mat-dialog-content>
+    <mat-form-field>
+        <mat-label>ID#</mat-label>
+        <input id="id" matInput [(ngModel)]="id">
+    </mat-form-field>
+</div>
+
+<div mat-dialog-content>
+    <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input id="address" matInput [(ngModel)]="address">
+    </mat-form-field>
+</div>
+
+<mat-dialog-actions>
+    <button id="order" mat-raised-button (click)="order()">Order</button>
+    <button mat-button (click)="cancel()">Cancel</button>
+</mat-dialog-actions>
+
+<script src="../../assets/js/index.js"></script>
