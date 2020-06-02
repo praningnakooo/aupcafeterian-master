@@ -34,6 +34,8 @@ function purchaseClicked() {
     updateCartTotal()
 }
 
+
+
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
@@ -100,3 +102,18 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+
+//export default updateCartTotal;
+
+// let order = updateCartTotal();
+// export { order };
+
+// function App() {
+//     return { <
+//         div className = "containter" >
+//         Hello World;
+
+//         <
+//         /div>
+//     };
+// }
