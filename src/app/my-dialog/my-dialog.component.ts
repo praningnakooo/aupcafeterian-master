@@ -17,12 +17,10 @@ export class MyDialogComponent implements OnInit {
   address: string;
   info;
 
-
-
   constructor(public dialogRef: MatDialogRef<MyDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data:any,
     private route: ActivatedRoute,
-    private menuComponent : MenuComponent)
+    private menuComponent : MenuComponent,)
      { }
 
 
@@ -47,3 +45,16 @@ export class MyDialogComponent implements OnInit {
   }
 
 }
+
+// export default class CreateUser extends Component{
+//   constructor(props){
+//     super(props);
+
+//     this. = {
+//       username: '',
+//       id: '',
+//       address: '',
+//       users: []
+//     }
+//   }
+// }
